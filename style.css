@@ -1,0 +1,160 @@
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #181818;
+    margin: 0px;
+}
+#container{
+    margin: 0 auto;
+    width: 50em;
+    height: 100%;
+}
+#hint{
+    color: snow;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+.bubble{
+    width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin: 0px auto;
+	position: absolute;
+}
+#exp{	
+	
+	top: 350px;
+	left: 725px;
+	z-index: 1;
+	background-color: #EBD3C0;
+	animation: exp 4s linear infinite;
+	transform: rotate(45deg) translateX(125px) rotate(-45deg);
+	
+}
+@keyframes exp{
+	from{transform : rotate(0deg) translateX(125px) rotate(0deg);}
+	to{transform : rotate(360deg) translateX(125px) rotate(-360deg);}
+}
+
+#skill{	
+	top: 350px;
+	left: 725px;
+	z-index: 2;
+	background-color: #17D9EB;
+	animation: skill 8s linear infinite;
+	transform: rotate(45deg) translateX(-175px) rotate(-45deg);
+		
+}
+@keyframes skill{
+	from{transform : rotate(0deg) translateX(-175px) rotate(0deg);}
+	to{transform : rotate(360deg) translateX(-175px) rotate(-360deg);}
+}
+
+#contact{
+	top: 350px;
+	left: 725px;
+	z-index: 3;
+	background-color: #53EB79;
+	animation: contact 12s linear infinite;
+	transform: rotate(45deg) translateY(225px) rotate(-45deg);
+		
+}
+@keyframes contact{
+	from{transform : rotate(0deg) translateY(225px) rotate(0deg);}
+	to{transform : rotate(360deg) translateY(225px) rotate(-360deg);}
+}
+
+#education{	
+	top: 350px;
+	left: 725px;
+	z-index: 4;
+	background-color: #F54C46;
+	animation: education 12s linear infinite;
+	transform: rotate(45deg) translateX(275px) rotate(-45deg);
+		
+}
+@keyframes education{
+	from{transform : rotate(0deg) translateX(275px) rotate(0deg);}
+	to{transform : rotate(360deg) translateX(275px) rotate(-360deg);}
+}
+#exp:hover{
+	animation-play-state: paused;
+}
+#skill:hover{
+	animation-play-state: paused;
+}
+#contact:hover{
+	animation-play-state: paused;
+}
+#education:hover{
+	animation-play-state: paused;
+}
+#profile{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 300px;
+	left: 600px;
+	margin-left: 5%;
+	border-radius: 50%;
+}
+.ring1{
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	z-index: 0;
+	top: 250px;
+	left: 625px;
+	border-radius: 50%;
+	border-style: dotted;
+	border-width: 2px;
+	border-color: white;
+}
+.ring2{
+	width: 350px;
+	height: 350px;
+	position: absolute;
+	z-index: 0;
+	top: 200px;
+	left: 575px;
+	border-radius: 50%;
+	border-style: dotted;
+	border-width: 2px;
+	border-color: white;
+}
+.ring3{
+	width: 450px;
+	height: 450px;
+	position: absolute;
+	z-index: 0;
+	top: 150px;
+	left: 525px;
+	border-radius: 50%;
+	border-style: dotted;
+	border-width: 2px;
+	border-color: white;
+}
+.ring4{
+	width: 550px;
+	height: 550px;
+	position: absolute;
+	z-index: 0;
+	top: 100px;
+	left: 475px;
+	border-radius: 50%;
+	border-style: dotted	;
+	border-width: 2px;
+	border-color: white;
+}
+#text{
+    height: 15em;
+    width: 25em;
+    border: whitesmoke 1px solid;
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    color: azure;
+    opacity: 0;
+}
